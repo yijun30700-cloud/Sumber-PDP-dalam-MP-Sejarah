@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sumber Sejarah Pemangkin Kualiti Pengajaran Global - pameran digital institusi maklumat sumber pengajaran dan pembelajaran Sejarah.">
+<title>Sumber Sejarah | Pemangkin Kualiti Pengajaran Global</title>
+<style>
+:root{--navy:#10243a;--blue:#173d5c;--gold:#c8a45d;--cream:#f5f2e9;--ink:#263443;--muted:#687887;--white:#fff;--line:#e4e0d5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fbfaf7;line-height:1.65}
+a{color:inherit}.topline{height:5px;background:linear-gradient(90deg,var(--gold),#ead9ad,var(--gold))}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 3px 16px #07152235}
+.navwrap{max-width:1180px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.seal{width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:22px}
+.brand strong{display:block;font-family:Georgia,serif;font-size:15px;letter-spacing:.5px}.brand small{display:block;color:#c7d0d8;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+nav{display:flex;gap:17px;align-items:center;flex-wrap:wrap}nav a{text-decoration:none;font-size:12px;color:#e6edf2}nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid #718294;color:white;padding:7px 10px;border-radius:5px}
+.hero{background:linear-gradient(120deg,#10243aee,#173d5ce8),radial-gradient(circle at 80% 20%,#c8a45d55,transparent 40%);color:#fff;min-height:470px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:450px;height:450px;border:1px solid #c8a45d55;border-radius:50%;right:-80px;top:25px;box-shadow:0 0 0 35px #c8a45d0d,0 0 0 75px #c8a45d0a}
+.hero-inner{max-width:1180px;margin:auto;padding:80px 22px;position:relative;z-index:1;width:100%}
+.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:2.5px;text-transform:uppercase;font-size:11px}
+h1{font-family:Georgia,serif;font-size:clamp(38px,6vw,68px);line-height:1.08;max-width:800px;margin:18px 0}
+.hero p{font-size:17px;color:#dbe4eb;max-width:650px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 19px;border-radius:3px;text-decoration:none;font-size:13px;font-weight:bold;letter-spacing:.3px}
+.btn.gold{background:var(--gold);color:#13283b}.btn.outline{border:1px solid #c8d3dc;color:#fff}
+.container{max-width:1120px;margin:auto;padding:70px 22px}.section-head{max-width:760px;margin-bottom:30px}.section-head .eyebrow{color:#9a7838}.section-head h2{font: bold clamp(28px,4vw,40px)/1.2 Georgia,serif;color:var(--navy);margin:9px 0 12px}.section-head p{color:var(--muted);margin:0}
+.intro-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:38px;align-items:center}.quote{background:var(--cream);padding:30px;border-left:4px solid var(--gold);font:italic 20px/1.5 Georgia,serif;color:var(--navy)}
+.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.stat{padding:17px;background:#fff;border:1px solid var(--line);text-align:center}.stat b{display:block;color:var(--blue);font: bold 25px Georgia}.stat span{font-size:11px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.card{background:#fff;border:1px solid var(--line);box-shadow:0 7px 22px #142b3b0b;overflow:hidden}.card-top{padding:24px;background:var(--navy);color:#fff;position:relative}.card-top:after{content:"✦";position:absolute;right:24px;top:12px;color:var(--gold);font-size:42px;opacity:.7}.card-top small{color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;font-size:10px}.card-top h3{font:26px Georgia;margin:8px 0}.card-body{padding:24px}.card-body p{color:var(--muted);margin-top:0}.tag{display:inline-block;background:#f1eadb;color:#755b2e;border-radius:20px;padding:5px 10px;font-size:11px;margin:3px 3px 3px 0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{padding:25px;background:#fff;border:1px solid var(--line)}.panel h3{font:22px Georgia;color:var(--navy);margin:0 0 12px}.panel ul{padding-left:19px;margin-bottom:0}.panel li{margin:8px 0}
+.soft{background:var(--cream)}.timeline{border-left:2px solid var(--gold);margin:24px 0 0 9px;padding-left:25px}.event{position:relative;padding:0 0 22px}.event:before{content:"";position:absolute;left:-32px;top:7px;width:11px;height:11px;background:var(--gold);border:3px solid var(--cream);border-radius:50%}.event b{color:var(--navy)}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.resource{padding:22px;background:#fff;border:1px solid var(--line)}.resource .ico{font-size:26px}.resource h3{font:20px Georgia;color:var(--navy);margin:9px 0}.resource p{font-size:13px;color:var(--muted);margin:0}
+.impact{background:var(--navy);color:#fff}.impact .section-head h2{color:#fff}.impact .section-head p{color:#c7d2dc}.impact .eyebrow{color:var(--gold)}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.impact-item{padding:22px;border:1px solid #ffffff28;background:#ffffff09}.impact-item b{display:block;color:var(--gold);font:22px Georgia;margin-bottom:8px}.impact-item p{font-size:13px;color:#d5dfe7;margin:0}
+.note{font-size:12px;color:var(--muted);background:#fff9e9;border:1px solid #ead9ad;padding:13px 16px;margin-top:20px}
+.exhibit{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.exhibit figure{margin:0;background:#fff;border:1px solid var(--line)}.placeholder{height:165px;background:linear-gradient(135deg,#e7e1d3,#c9d2d6);display:grid;place-items:center;color:#556675;font-size:13px;text-align:center;padding:15px}.exhibit figcaption{padding:13px;font-size:13px}.exhibit figcaption b{display:block;color:var(--navy);margin-bottom:3px}
+.student{background:#fff;border:1px solid var(--line);padding:25px}.student-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.field{padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}.field span{display:inline-block;color:var(--muted);width:42%}.field strong{color:var(--navy)}
+.references{font-size:13px;color:var(--muted)}.references li{margin:10px 0;overflow-wrap:anywhere}
+footer{background:#091827;color:#c8d2dc;padding:32px 22px;text-align:center;font-size:12px}footer b{color:var(--gold)}.backtop{position:fixed;bottom:20px;right:20px;background:var(--gold);color:#13283b;text-decoration:none;padding:10px 13px;border-radius:50%;font-weight:bold}
+@media(max-width:800px){nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--navy);padding:18px 22px;flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu{display:block}.intro-grid,.two-col{grid-template-columns:1fr}.resource-grid,.impact-grid{grid-template-columns:1fr 1fr}.exhibit{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr}}
+@media(max-width:520px){.resource-grid,.impact-grid,.exhibit,.student-grid,.statrow{grid-template-columns:1fr}.hero{min-height:420px}.container{padding:52px 18px}.field span{width:100%;display:block}.brand strong{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+ <div class="navwrap">
+  <a class="brand" href="#utama"><span class="seal">⌂</span><span><strong>SUMBER SEJARAH</strong><small>Pameran Pendidikan Digital</small></span></a>
+  <button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">Menu ☰</button>
+  <nav>
+   <a href="#pengenalan">Pengenalan</a><a href="#institusi">Institusi</a><a href="#sumber">Sumber</a><a href="#aktiviti">Aktiviti</a><a href="#impak">Impak PdP</a><a href="#pameran">Pameran</a><a href="#rujukan">Rujukan</a>
+  </nav>
+ </div>
+</header>
+<main id="utama">
+<section class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">Tajuk 6 · Institusi Maklumat Sumber Pengajaran dan Pembelajaran Sejarah</div>
+  <h1>Sumber Sejarah,<br><span style="color:var(--gold)">Pemangkin</span> Kualiti Pengajaran Global</h1>
+  <p>Meneroka peranan institusi sejarah dalam memelihara warisan, memperkaya sumber pengajaran dan membina pembelajaran Sejarah yang kritis, autentik serta bermakna.</p>
+  <div class="hero-actions"><a class="btn gold" href="#institusi">Terokai Institusi</a><a class="btn outline" href="#impak">Lihat Impak Pendidikan</a></div>
+ </div>
+</section>
+
+<section class="container" id="pengenalan">
+ <div class="intro-grid">
+  <div>
+   <div class="section-head"><div class="eyebrow">01 · Pengenalan</div><h2>Menghubungkan sumber sejarah dengan pendidikan masa hadapan</h2>
+   <p>Institusi maklumat sejarah berperanan sebagai pusat rujukan, penyelidikan, dokumentasi dan pemuliharaan warisan. Koleksi serta kepakaran yang dihimpunkan dapat dimanfaatkan oleh guru, murid, penyelidik dan masyarakat.</p></div>
+   <p>Melalui pendedahan kepada dokumen, foto lama, artifak, penerbitan dan sejarah lisan, pembelajaran Sejarah tidak hanya tertumpu pada hafalan fakta. Murid berpeluang meneliti bukti, membina persoalan dan memahami perubahan masyarakat dari perspektif yang lebih luas.</p>
+   <div class="statrow"><div class="stat"><b>2</b><span>Institusi cawangan dikaji</span></div><div class="stat"><b>4</b><span>Objektif utama PSM</span></div><div class="stat"><b>∞</b><span>Peluang penerokaan sejarah</span></div></div>
+  </div>
+  <div class="quote">“Sejarah perlu disokong oleh bukti yang dapat dilihat, diteliti dan dinilai — bukan sekadar dihafal.”<br><small style="font:12px Arial;color:#687887">Rumusan berdasarkan temu bual institusi, 2026</small></div>
+ </div>
+</section>
+
+<section class="soft" id="institusi">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">02 · Institusi yang dikaji</div><h2>Dua cawangan, satu matlamat pemartabatan sejarah</h2><p>Kedua-dua institusi bergerak dalam lingkungan Persatuan Sejarah Malaysia dan menyumbang kepada pemeliharaan serta penyebaran ilmu sejarah tempatan.</p></div>
+  <div class="cards">
+   <article class="card">
+    <div class="card-top"><small>Institusi 01 · Kedah</small><h3>Persatuan Sejarah Malaysia<br>Cawangan Kedah</h3></div>
+    <div class="card-body">
+     <p>Cawangan yang aktif mengumpulkan minat masyarakat terhadap sejarah dan warisan Kedah, memelihara bahan warisan, mendokumentasikan pengetahuan serta menerbitkan hasil penyelidikan.</p>
+     <span class="tag">Sejarah tempatan</span><span class="tag">Koleksi dan dokumentasi</span><span class="tag">Penerbitan</span>
+     <h4>Fokus dan sumbangan</h4>
+     <ul><li>Menggalakkan minat masyarakat terhadap sejarah dan warisan.</li><li>Menyokong pemeliharaan artifak, monumen dan lokasi bersejarah.</li><li>Menghasilkan jurnal, buletin, laporan tahunan dan bahan dokumentasi.</li><li>Menganjurkan wacana, seminar, kuiz sejarah dan perbincangan meja bulat.</li></ul>
+     <p><b>Maklumat cawangan:</b> No. 55, Taman Padimas Jaya, 08000 Sungai Petani, Kedah. Maklumat hubungan rasmi boleh dirujuk melalui portal PSM.</p>
+    </div>
+   </article>
+   <article class="card">
+    <div class="card-top"><small>Institusi 02 · Pulau Pinang</small><h3>Persatuan Sejarah Malaysia<br>Cawangan Pulau Pinang</h3></div>
+    <div class="card-body">
+     <p>Cawangan yang menyebarluaskan pengetahuan sejarah negeri, memupuk minat masyarakat dan memberi perhatian kepada penelitian serta pemahaman naratif sejarah tempatan.</p>
+     <span class="tag">Penyelidikan sejarah</span><span class="tag">Kerjasama akademik</span><span class="tag">Pendidikan awam</span>
+     <h4>Fokus dan sumbangan</h4>
+     <ul><li>Bekerjasama dengan guru Sejarah, pensyarah dan pakar daripada USM.</li><li>Mengangkat kajian sumber primer seperti koleksi surat-surat Light (Light Letters) untuk penelitian sejarah awal Pulau Pinang.</li><li>Menganjurkan seminar sejarah dan menyertai kuiz Sejarah dan Patriotisme.</li><li>Menggalakkan lawatan serta pendedahan kepada tapak warisan seperti Gua Kepah.</li></ul>
+     <p><b>Maklumat cawangan:</b> D/a Wisma Pengakap, No. 1, Solok Scotland, 10450 Pulau Pinang. Maklumat hubungan rasmi boleh dirujuk melalui portal PSM.</p>
+    </div>
+   </article>
+  </div>
+  <div class="note"><b>Catatan ketepatan:</b> Maklumat aktiviti dan koleksi cawangan dirumus daripada transkrip temu bual yang dibekalkan. Transkrip automatik mempunyai beberapa bahagian yang kurang jelas; butiran tarikh dan dakwaan khusus wajar disahkan melalui pihak institusi sebelum penerbitan akhir.</div>
+ </div>
+</section>
+
+<section class="container">
+ <div class="section-head"><div class="eyebrow">03 · Sejarah dan perkembangan</div><h2>Jejak perkembangan institusi</h2><p>Sejarah PSM dan perkembangan cawangannya memperlihatkan usaha berterusan membina kesedaran serta rujukan sejarah di peringkat negara dan negeri.</p></div>
+ <div class="two-col">
+  <div class="panel"><h3>Persatuan Sejarah Malaysia</h3><div class="timeline">
+   <div class="event"><b>1953</b><br>Persatuan Sejarah Malaya ditubuhkan sebagai badan yang memajukan minat dan kajian sejarah.</div>
+   <div class="event"><b>1956–1957</b><br>Perkembangan awal cawangan Kedah; portal sejarah rasmi PSM menyenaraikan Kedah pada tahun 1957.</div>
+   <div class="event"><b>1971</b><br>Persatuan Sejarah Pulau Pinang bergabung dengan PSM sebagai cawangan.</div>
+  </div></div>
+  <div class="panel"><h3>Halatuju dan misi</h3><p>Portal rasmi PSM menekankan usaha memartabatkan dan memasyarakatkan sejarah serta menjadi perujuk berwibawa mengenai sejarah negara dan wilayah sekitarnya.</p><ul><li>Memupuk minat terhadap sejarah dan warisan.</li><li>Mengesan, mendokumentasi dan menyimpan bukti sejarah.</li><li>Memulihara artifak serta bahan warisan.</li><li>Menyebarkan ilmu melalui penyelidikan dan penerbitan.</li></ul></div>
+ </div>
+</section>
+
+<section class="soft" id="sumber">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">04 · Koleksi dan sumber rujukan</div><h2>Apakah sumber sejarah yang boleh dimanfaatkan?</h2><p>Kepelbagaian sumber membantu guru merancang pengalaman pembelajaran yang lebih konkrit dan memberi peluang kepada murid menilai bukti daripada pelbagai bentuk.</p></div>
+  <div class="resource-grid">
+   <div class="resource"><div class="ico">📜</div><h3>Dokumen dan surat</h3><p>Surat-surat sejarah, rekod, manuskrip dan dokumen yang boleh diteliti untuk memahami peristiwa serta pentadbiran masa lalu.</p></div>
+   <div class="resource"><div class="ico">📷</div><h3>Foto dan rakaman</h3><p>Foto lama, rakaman audio dan video yang memberi gambaran tentang kehidupan, tempat dan perubahan masyarakat.</p></div>
+   <div class="resource"><div class="ico">🏺</div><h3>Artifak dan warisan</h3><p>Bahan maujud, batu bersurat, artifak, monumen dan tapak warisan sebagai bukti kewujudan sejarah.</p></div>
+   <div class="resource"><div class="ico">📚</div><h3>Jurnal dan buku</h3><p>Penulisan akademik, artikel penyelidikan, buku sejarah dan hasil kajian ahli serta penyelidik.</p></div>
+   <div class="resource"><div class="ico">📰</div><h3>Buletin dan laporan</h3><p>Buletin tahunan, laporan aktiviti, laporan persidangan, kertas kerja dan dokumentasi program.</p></div>
+   <div class="resource"><div class="ico">🎙️</div><h3>Sejarah lisan</h3><p>Temu bual individu, tokoh dan komuniti untuk merekod pengalaman serta ingatan yang berkaitan dengan sejarah setempat.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="container" id="aktiviti">
+ <div class="section-head"><div class="eyebrow">05 · Program dan aktiviti</div><h2>Menghidupkan sejarah melalui penglibatan masyarakat</h2><p>Program institusi menyediakan ruang untuk berkongsi ilmu, bertukar pandangan dan mendekatkan generasi muda dengan warisan sejarah.</p></div>
+ <div class="two-col">
+  <div class="panel"><h3>Aktiviti Cawangan Kedah</h3><ul><li>Wacana dan seminar sejarah.</li><li>Webinar serta program bersemuka.</li><li>Pertandingan kuiz Sejarah untuk murid sekolah.</li><li>Perbincangan meja bulat (Roundtable Discussion).</li><li>Penerbitan jurnal, buletin dan laporan tahunan.</li><li>Dokumentasi sejarah melalui foto, audio dan video.</li></ul></div>
+  <div class="panel"><h3>Aktiviti Cawangan Pulau Pinang</h3><ul><li>Seminar khas tentang sejarah awal Pulau Pinang.</li><li>Kuiz Sejarah dan Patriotisme peringkat kebangsaan.</li><li>Kerjasama dengan guru, sekolah dan pakar sejarah USM.</li><li>Aktiviti pendidikan dan pendedahan kepada tapak warisan.</li><li>Perkongsian hasil penyelidikan dan penerbitan akademik.</li></ul></div>
+ </div>
+</section>
+
+<section class="impact" id="impak">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">06 · Kesan terhadap pengajaran global</div><h2>Daripada sumber autentik kepada kemahiran abad ke-21</h2><p>Pendedahan kepada sumber sejarah yang sahih membantu membina pembelajaran berasaskan bukti, inkuiri dan komunikasi merentas perspektif.</p></div>
+  <div class="impact-grid">
+   <div class="impact-item"><b>01 · Pemikiran kritis</b><p>Murid meneliti, membanding beza dan menilai kesahihan sumber sebelum membuat kesimpulan sejarah.</p></div>
+   <div class="impact-item"><b>02 · Literasi maklumat</b><p>Murid belajar mencari, memilih, mentafsir dan menggunakan maklumat daripada sumber yang sesuai.</p></div>
+   <div class="impact-item"><b>03 · Inkuiri sejarah</b><p>Murid membina persoalan seperti siapa, apa, bila, di mana, mengapa dan bagaimana berdasarkan bukti.</p></div>
+   <div class="impact-item"><b>04 · Komunikasi</b><p>Perbincangan sumber menggalakkan murid menyampaikan hujah dengan jelas dan berasaskan bukti.</p></div>
+   <div class="impact-item"><b>05 · Kolaborasi dan hormat</b><p>Murid bekerjasama serta menghormati tafsiran dan pandangan yang berbeza.</p></div>
+   <div class="impact-item"><b>06 · Perspektif global</b><p>Perbandingan sejarah tempatan dan dunia membantu murid memahami hubungan antara masyarakat dan peradaban.</p></div>
+  </div>
+  <div class="note" style="background:#fff9e9;color:#263443"><b>Inti pati:</b> Sumber sejarah autentik menjadikan PdP lebih bermakna kerana murid bukan sahaja menerima fakta, malah belajar bagaimana pengetahuan sejarah dibina dan dinilai.</div>
+ </div>
+</section>
+
+<section class="container">
+ <div class="section-head"><div class="eyebrow">07 · Akses, cabaran dan penambahbaikan</div><h2>Memperluas akses, memelihara kesinambungan</h2></div>
+ <div class="two-col">
+  <div class="panel"><h3>Kaedah mengakses sumber</h3><ul><li>Menghubungi cawangan untuk mendapatkan maklumat tentang koleksi dan aktiviti.</li><li>Mengunjungi perpustakaan atau institusi rakan yang menyimpan bahan rujukan.</li><li>Merujuk perpustakaan dan bahagian sejarah universiti, termasuk kemudahan USM seperti yang diterangkan dalam temu bual.</li><li>Mengakses penerbitan dan maklumat melalui portal rasmi PSM.</li><li>Menyertai seminar, wacana, lawatan dan program pendidikan.</li></ul></div>
+  <div class="panel"><h3>Cabaran dan cadangan</h3><ul><li><b>Tenaga kerja sukarela:</b> Libatkan pelajar universiti dan generasi muda dalam kerja dokumentasi.</li><li><b>Kekangan kewangan:</b> Perkukuh kerjasama dengan sekolah, universiti, perpustakaan dan agensi kerajaan.</li><li><b>Pendigitalan:</b> Imbas dan susun bahan secara berperingkat mengikut keutamaan pemeliharaan.</li><li><b>Jurang digital:</b> Kekalkan program bersemuka di samping saluran digital.</li><li><b>Pengurusan metadata:</b> Catat nama, tarikh, lokasi, pencipta dan konteks bagi setiap bahan.</li></ul></div>
+ </div>
+</section>
+
+<section class="soft" id="pameran">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">08 · Galeri pameran digital</div><h2>Jejak bukti, warisan dan dokumentasi</h2><p>Ruang ini disediakan untuk memaparkan foto lawatan, bahan koleksi, dokumentasi temu bual dan aktiviti institusi. Gantikan kotak contoh dengan foto sebenar yang mendapat kebenaran penggunaan.</p></div>
+  <div class="exhibit">
+   <figure><div class="placeholder">Masukkan foto lawatan / temu bual Kedah</div><figcaption><b>Dokumentasi Cawangan Kedah</b>Foto lawatan dan sesi temu bual institusi.</figcaption></figure>
+   <figure><div class="placeholder">Masukkan foto jurnal / buletin / koleksi</div><figcaption><b>Penerbitan dan koleksi</b>Jurnal, buletin, laporan serta bahan dokumentasi.</figcaption></figure>
+   <figure><div class="placeholder">Masukkan foto lawatan / temu bual Pulau Pinang</div><figcaption><b>Dokumentasi Cawangan Pulau Pinang</b>Foto lawatan dan perkongsian bersama wakil institusi.</figcaption></figure>
+   <figure><div class="placeholder">Masukkan imej dokumen atau foto sejarah</div><figcaption><b>Sumber primer</b>Contoh dokumen, foto lama atau surat sejarah.</figcaption></figure>
+   <figure><div class="placeholder">Masukkan foto seminar / kuiz / wacana</div><figcaption><b>Program dan aktiviti</b>Penglibatan masyarakat dan generasi muda.</figcaption></figure>
+   <figure><div class="placeholder">Masukkan foto bahan pameran</div><figcaption><b>Warisan setempat</b>Artifak, monumen atau tapak sejarah.</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="container">
+ <div class="section-head"><div class="eyebrow">09 · Maklumat tugasan</div><h2>Identiti penyedia laman</h2><p>Lengkapkan maklumat berikut sebelum laman diterbitkan atau dikongsi dengan pensyarah.</p></div>
+ <div class="student"><div class="student-grid">
+  <div class="field"><span>Nama Institut</span><strong>IPG Kampus Sultan Abdul Halim</strong></div>
+  <div class="field"><span>Program</span><strong>PISMP – Sejarah Pendidikan Rendah</strong></div>
+  <div class="field"><span>Nama Kursus</span><strong>[Isi nama kursus]</strong></div>
+  <div class="field"><span>Kod Kursus</span><strong>[Isi kod kursus]</strong></div>
+  <div class="field"><span>Nama Pelajar</span><strong>[Isi nama penuh]</strong></div>
+  <div class="field"><span>Semester / Tahun</span><strong>[Isi semester dan tahun pengajian]</strong></div>
+  <div class="field"><span>Angka Giliran</span><strong>[Isi angka giliran]</strong></div>
+  <div class="field"><span>No. Kad Pengenalan</span><strong>[Isi mengikut keperluan tugasan]</strong></div>
+  <div class="field"><span>Kumpulan / Unit</span><strong>[Isi kumpulan / unit]</strong></div>
+  <div class="field"><span>Nama Pensyarah</span><strong>[Isi nama pensyarah]</strong></div>
+ </div></div>
+</section>
+
+<section class="soft" id="rujukan">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">10 · Rujukan dan pautan</div><h2>Rujukan untuk penerokaan lanjut</h2><p>Rujukan rasmi dan bahan temu bual digunakan untuk membina kandungan pameran ini.</p></div>
+  <ol class="references">
+   <li>Persatuan Sejarah Malaysia. (t.t.). <i>Portal rasmi Persatuan Sejarah Malaysia</i>. <a href="https://psm.org.my/" target="_blank" rel="noopener">https://psm.org.my/</a></li>
+   <li>Persatuan Sejarah Malaysia. (t.t.). <i>Objektif Persatuan Sejarah Malaysia</i>. <a href="https://psm.org.my/pengenalan/objektif/" target="_blank" rel="noopener">Pautan objektif</a>.</li>
+   <li>Persatuan Sejarah Malaysia. (t.t.). <i>Misi Persatuan Sejarah Malaysia</i>. <a href="https://psm.org.my/pengenalan/misi/" target="_blank" rel="noopener">Pautan misi</a>.</li>
+   <li>Persatuan Sejarah Malaysia. (t.t.). <i>Sejarah penubuhan dan perkembangan cawangan</i>. <a href="https://psm.org.my/imbasan-penubuhan-psm/" target="_blank" rel="noopener">Pautan sejarah PSM</a>.</li>
+   <li>Persatuan Sejarah Malaysia. (t.t.). <i>Senarai PSM Cawangan</i>. <a href="https://psm.org.my/pengurusan/psm-cawangan/" target="_blank" rel="noopener">Pautan cawangan</a>.</li>
+   <li>Temu bual wakil Persatuan Sejarah Malaysia Cawangan Kedah dan Persatuan Sejarah Malaysia Cawangan Pulau Pinang. (2026). Transkrip temu bual yang dibekalkan dalam bahan tugasan.</li>
+  </ol>
+ </div>
+</section>
+</main>
+<footer><b>SUMBER SEJARAH · PEMANGKIN KUALITI PENGAJARAN GLOBAL</b><br>Memelihara warisan, menyebarkan ilmu, membina generasi celik sejarah.<br><span style="opacity:.7">Laman pameran pendidikan digital · 2026</span></footer>
+<a class="backtop" href="#utama" aria-label="Kembali ke atas">↑</a>
+</body>
+</html>
